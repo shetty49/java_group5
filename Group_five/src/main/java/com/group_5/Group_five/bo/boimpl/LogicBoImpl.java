@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.group_5.Group_five.bo.LogicBo;
 import com.group_5.Group_five.filedao.FileSaveDao;
+import com.group_5.Group_five.vo.CourseVo;
 import com.group_5.Group_five.vo.FacultyVo;
 import com.group_5.Group_five.vo.StudentVo;
 
@@ -22,23 +23,47 @@ public class LogicBoImpl implements LogicBo {
 	public void addStudent(StudentVo st) {
 		logger.info("LogicBoImpl --> addStudent"+st);
 		
-		fileSaveDao.addStudent(st);
+//		fileSaveDao.addStudent(st);
 	}
 
 	@Override
 	public void addFaculty(FacultyVo fa) {
 		logger.info("LogicBoImpl --> addFaculty"+fa);
 		
-		fileSaveDao.addFaculty(fa);
+//		fileSaveDao.addFaculty(fa);
 	}
 
 	@Override
 	public List<StudentVo> getStudentsByFaculty(Long facultyId) {
 		logger.info("LogicBoImpl --> getStudentsByFaculty"+facultyId);
 		
-		fileSaveDao.getStudentsByFaculty(facultyId);
+//		fileSaveDao.getStudentsByFaculty(facultyId);
 		
 		return null;
+	}
+
+	@Override
+	public void addCourse(CourseVo co) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addSubject(StudentVo sub) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getStudentDetails(Long studentId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getCourseDetails(Long CourseId) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.group_5.Group_five.bo.boimpl.LogicBoImpl;
 import com.group_5.Group_five.filedao.FileSaveDao;
+import com.group_5.Group_five.vo.CourseVo;
 import com.group_5.Group_five.vo.FacultyVo;
 import com.group_5.Group_five.vo.StudentVo;
 
@@ -33,6 +34,30 @@ public class FileSaveDaoImpl implements FileSaveDao {
 		logger.info("FileSaveDaoImpl --> getStudentsByFaculty"+facultyId);
 		
 		return null;
+	}
+
+	@Override
+	public void addCourse(CourseVo co) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void addSubject(StudentVo sub) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getStudentDetails(Long studentId) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void getCourseDetails(Long CourseId) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
