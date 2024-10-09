@@ -13,7 +13,7 @@ public interface FileSaveDao {
 	void addCourse(CourseVo co);
 	void addSubject(StudentVo sub);
 	List<StudentVo> getStudentsByFaculty(Long facultyId);
-	void getStudentDetails(Long studentId);
-	void getCourseDetails(Long CourseId);
+	StudentVo getStudentDetails(Long studentId);
+	CourseVo getCourseDetails(Long CourseId);
 
 }

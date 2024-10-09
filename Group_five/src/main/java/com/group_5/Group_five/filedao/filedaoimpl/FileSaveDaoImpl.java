@@ -5,6 +5,7 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.group_5.Group_five.bo.LogicBo;
 import com.group_5.Group_five.bo.boimpl.LogicBoImpl;
 import com.group_5.Group_five.filedao.FileSaveDao;
 import com.group_5.Group_five.vo.CourseVo;
@@ -15,7 +16,6 @@ public class FileSaveDaoImpl implements FileSaveDao {
 	
 	
     private static final Logger logger = Logger.getLogger(LogicBoImpl.class.getName());
-
 
 	@Override
 	public void addStudent(StudentVo st) {
@@ -49,14 +49,14 @@ public class FileSaveDaoImpl implements FileSaveDao {
 	}
 
 	@Override
-	public void getStudentDetails(Long studentId) {
-		// TODO Auto-generated method stub
+	public StudentVo getStudentDetails(Long studentId) {
+		return null;
 		
 	}
 
 	@Override
-	public void getCourseDetails(Long CourseId) {
-		// TODO Auto-generated method stub
+	public CourseVo getCourseDetails(Long CourseId) {
+		return null;
 		
 	}
 

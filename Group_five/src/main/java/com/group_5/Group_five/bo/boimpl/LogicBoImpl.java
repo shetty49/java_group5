@@ -10,6 +10,7 @@ import com.group_5.Group_five.filedao.FileSaveDao;
 import com.group_5.Group_five.vo.CourseVo;
 import com.group_5.Group_five.vo.FacultyVo;
 import com.group_5.Group_five.vo.StudentVo;
+import com.group_5.Group_five.vo.SubjectVo;
 
 
 public class LogicBoImpl implements LogicBo {
@@ -49,7 +50,7 @@ public class LogicBoImpl implements LogicBo {
 	}
 
 	@Override
-	public void addSubject(StudentVo sub) {
+	public void addSubject(SubjectVo sub) {
 		// TODO Auto-generated method stub
 		
 	}
