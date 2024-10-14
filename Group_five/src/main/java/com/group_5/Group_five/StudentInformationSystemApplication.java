@@ -38,12 +38,12 @@ public class StudentInformationSystemApplication {
 	    
 	    switch (task) {
 	    case 1:
-	    	System.out.println("enter student name, rollno, courceId, facultyId");
+	    	System.out.println("enter student name, rollno, courseId, facultyId");
 	    	StudentVo st = new StudentVo();
 	        Scanner stInfo = new Scanner(System.in);
 	    	st.setName(stInfo.next());
 	    	st.setRno(stInfo.next());
-	    	st.setCourceId(Long.parseLong(stInfo.next()));
+	    	st.setCourseId(Long.parseLong(stInfo.next()));
 	    	st.setFacultyId(Long.parseLong(stInfo.next()));
 	    	System.out.println("student -> "+st);
 	    	//call add student

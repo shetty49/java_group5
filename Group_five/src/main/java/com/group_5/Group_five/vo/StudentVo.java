@@ -7,8 +7,20 @@ public class StudentVo {
 
 	private String name;
 	private String rno;
-	private Long courceId;
+	private Long courseId;
 	private Long facultyId;
+	
+	public StudentVo(String name, String rno, Long courceId, Long facultyId) {
+		this.name = name;
+		this.rno = rno;
+		this.courseId = courceId;
+		this.facultyId = facultyId;
+	}
+	
+	public StudentVo() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -21,11 +33,11 @@ public class StudentVo {
 	public void setRno(String rno) {
 		this.rno = rno;
 	}
-	public Long getCourceId() {
-		return courceId;
+	public Long getCourseId() {
+		return courseId;
 	}
-	public void setCourceId(Long courceId) {
-		this.courceId = courceId;
+	public void setCourseId(Long courseId) {
+		this.courseId = courseId;
 	}
 	public Long getFacultyId() {
 		return facultyId;
@@ -35,7 +47,7 @@ public class StudentVo {
 	}
 	@Override
 	public String toString() {
-		return "StudentVo [name=" + name + ", rno=" + rno + ", courceId=" + courceId + ", facultyId=" + facultyId + "]";
+		return "StudentVo [name=" + name + ", rno=" + rno + ", courseId=" + courseId + ", facultyId=" + facultyId + "]";
 	}
 	
 	
