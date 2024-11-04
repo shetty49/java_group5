@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import com.group_5.Group_five.bo.LogicBo;
 import com.group_5.Group_five.bo.boimpl.LogicBoImpl;
+import com.group_5.Group_five.exception.NoFacultyAvailableException;
 import com.group_5.Group_five.filedao.FileSaveDao;
 import com.group_5.Group_five.vo.CourseVo;
 import com.group_5.Group_five.vo.FacultyVo;
@@ -35,7 +36,7 @@ public class FileSaveDaoImpl implements FileSaveDao {
 		 try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_PATH_STUDENT, true))) {
 	            writer.write(st.toString());
 	            writer.newLine();
-	        } catch (IOException e) {
+	        } catch (NoFacultyAvailableException | IOException e) {
 	            logger.error("Error writing to file: " + e.getMessage());
 	        }
 	}
